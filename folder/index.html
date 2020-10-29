@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <script src="script.js" type="text/javascript"></script>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="omni-container">
+            <div id="main-container">
+                <p class="title">Input field</p>
+                <div id="input-container">
+                   <div>
+                    <table>
+                        <td>
+                        <TR>
+                            <td>Crop type</td>
+                            <TD>
+                                <div id="selector-wrapper">
+                                    <select id="crop-type">
+                                        <option id="opt" value="0"></option>
+                                        <option value="1">Rapeseed</option>
+                                        <option value="2">Soy</option>
+                                        <option value="3">Sunflower</option>
+                                        <option value="5">Corn</option>
+                                        <option value="5">Wheat</option>
+                                    </select>
+                                </div>
+                            </TD>
+                            <td class="unit">[-]</td>
+                        </TR>
+                        <TR>
+                            <td>S<sub>y</sub></td>
+                            <TD><input class="input-field" type="text"></TD>
+                            <td class="unit">[dt/ha]</td>
+                        </TR>
+                        <TR>
+                            <td>P<sub>out</sub></td>
+                            <TD><input class="input-field" type="text"></TD>
+                            <td class="unit"><span>[kW]</span></td>
+                        </TR>
+                        <TR>
+                            <td>η</td>
+                            <TD><input class="input-field" type="text"></TD>
+                            <td class="unit"><span>[%]</span></td>
+                        </TR>
+                        <TR>
+                            <td>H<sub>i</sub></td>
+                            <TD><input class="input-field" type="text"></TD>
+                            <td class="unit">[kWh/kg]</td>
+                        </TR>
+                        <TR>
+                            <td>t<sub>u</sub></td>
+                            <TD><input class="input-field" type="text"></TD>
+                            <td class="unit">[h]</td>
+                        </TR>
+                    </td>
+                </table>
+            </div>
+            
+                </div>
+                <div id="output-container">
+                    <p class="title">Output field</p>
+                        <p id="result-display"></p>
+                            <button onclick="calc();">Press</button>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+
+
+
+<!--
+
+<tr><td><span>Crop type<input class="input-field" type="text">[]</span></td></tr>
+<tr><td><span></span>S<sub>Y</sub><input class="input-field" type="text">[dt/ha]</span></td></tr>
+<span>P<sub>out</sub><input class="input-field" type="text">kW]</span>
+<span>η<input class="input-field" type="text">[%]</span>
+<span>H<input class="input-field" type="text">[kJ/kg]</span>
+<span>t<sub>u</sub><input class="input-field" type="text">[kJ/kg]</span>
+
+-->
